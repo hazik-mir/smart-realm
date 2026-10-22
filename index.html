@@ -3,54 +3,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Smart Realm — Find your next Minecraft adventure</title>
-  <meta name="description" content="Explore Minecraft servers, community events and giveaways with Smart Realm. Find your next blocky adventure and join the community on Discord.">
-  <meta name="theme-color" content="#f4c928">
+  <title>Smart Realm — Minecraft Community</title>
+  <meta name="description" content="Join Smart Realm for Minecraft community chats, giveaways, invite rewards and news about our upcoming Minecraft server.">
+  <meta name="theme-color" content="#171717">
   <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Smart Realm — Find your next Minecraft adventure">
-  <meta property="og:description" content="Servers, events and good company. Find your next Minecraft adventure with Smart Realm.">
+  <meta property="og:title" content="Smart Realm — Minecraft Community">
+  <meta property="og:description" content="A Minecraft community for chat, competitions, giveaways and the upcoming Smart Realm server.">
   <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/">
   <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=1200">
   <link rel="icon" href="./icon.png" type="image/png">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="wrap nav-wrap">
-      <a class="brand" href="#top" aria-label="Smart Realm home"><img src="./icon.png" alt="" width="42" height="42"><span>SMART<span class="brand-light"> REALM</span></span></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button>
-      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-        <a href="#servers">Server</a><a href="#features">Community</a><a class="nav-cta" href="https://discord.gg/xJpP79EB4y" target="_blank" rel="noopener noreferrer">Join Discord <span aria-hidden="true">↗</span></a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Smart Realm home"><img src="./icon.png" alt="" width="34" height="34"><span>SMART REALM</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">MENU <span aria-hidden="true">☰</span></button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#community">COMMUNITY</a><a href="#server">SERVER</a><a href="#giveaways">GIVEAWAYS</a><a href="https://discord.gg/xJpP79EB4y" target="_blank" rel="noopener noreferrer">DISCORD</a>
       </nav>
+      <a class="join-top" href="https://discord.gg/xJpP79EB4y" target="_blank" rel="noopener noreferrer">JOIN NOW <span>›</span></a>
     </div>
   </header>
   <main id="main">
-    <section class="hero wrap" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow">SMART REALM MINECRAFT COMMUNITY</p>
-        <h1>Build your<br>kind of <span>world.</span></h1>
-        <p class="hero-text">The Smart Realm Minecraft server is in the works. Until launch, jump into Discord for memes, chats, community rankings and giveaways.</p>
-        <div class="hero-actions"><a class="button button-dark" href="#features">Explore community <span>↓</span></a><a class="button button-outline" href="https://discord.gg/xJpP79EB4y" target="_blank" rel="noopener noreferrer">Come say hi <span>↗</span></a></div>
+    <section class="hero-section" id="top" aria-label="Featured Smart Realm scene">
+      <div class="hero-frame">
+        <img class="hero-image" id="hero-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=1800" alt="Snowy Minecraft mountains and forest" fetchpriority="high">
+        <div class="hero-overlay"></div>
+        <img class="hero-logo" src="./icon.png" alt="Smart Realm" width="132" height="132">
+        <article class="hero-panel" id="hero-panel">
+          <p class="panel-kicker">WELCOME TO SMART REALM</p>
+          <h1 id="hero-title">A new world<br>is taking shape.</h1>
+          <p id="hero-copy">Find your people, join the conversation and get ready for the upcoming Minecraft server.</p>
+          <a class="green-button" href="#community">EXPLORE THE COMMUNITY <span>›</span></a>
+        </article>
+        <p class="hero-creditline">SMART REALM COMMUNITY · MINECRAFT SERVER COMING SOON</p>
       </div>
-      <div class="hero-art" role="img" aria-label="Minecraft mountain landscape">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=1400" alt="Snowy Minecraft mountain landscape" fetchpriority="high">
-        <div class="art-label">Server coming soon</div>
+      <div class="hero-thumbnails" role="group" aria-label="Choose a featured Minecraft scene">
+        <button class="thumb active" type="button" aria-pressed="true" aria-label="Show mountain scene" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=1800" data-alt="Snowy Minecraft mountains and forest" data-title="A new world<br>is taking shape." data-copy="Find your people, join the conversation and get ready for the upcoming Minecraft server."><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=360" alt=""><img class="thumb-logo" src="./icon.png" alt=""></button>
+        <button class="thumb" type="button" aria-pressed="false" aria-label="Show village scene" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=1800" data-alt="Minecraft village in a plains biome" data-title="Find your place<br>in the realm." data-copy="Meet players, share your builds and explore what the Smart Realm community is up to."><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=360" alt=""><img class="thumb-logo" src="./icon.png" alt=""></button>
+        <button class="thumb" type="button" aria-pressed="false" aria-label="Show Nether scene" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Screenshot_from_the_Minecraft_Nether.png?width=1800" data-alt="Minecraft Nether landscape" data-title="The adventure<br>starts together." data-copy="Join the Discord now and be there when the Smart Realm server opens."><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Screenshot_from_the_Minecraft_Nether.png?width=360" alt=""><img class="thumb-logo" src="./icon.png" alt=""></button>
       </div>
     </section>
-    <section class="section wrap" id="servers">
-      <div class="section-heading"><div><p class="eyebrow">SERVER STATUS</p><h2>Coming<br><span>soon.</span></h2></div><p class="section-aside">The Smart Realm Minecraft server is being prepared. We’ll share its details in Discord when they’re ready.</p></div>
+    <section class="server-bar" id="server"><div class="server-status"><span class="status-dot"></span><span class="server-label">SERVER STATUS</span><strong>COMING SOON</strong></div><p>The Smart Realm server is in development. We’ll share the address and launch news when they’re confirmed.</p><a href="https://discord.gg/xJpP79EB4y" target="_blank" rel="noopener noreferrer">GET UPDATES ON DISCORD <span>›</span></a></section>
+    <section class="discover" id="community">
+      <div class="section-title"><p class="section-kicker">THE COMMUNITY</p><h2>DISCOVER SMART REALM</h2><p>Find your channel. Join the fun.</p></div>
+      <div class="realm-grid">
+        <a class="realm-card" href="https://discord.com/channels/1380602172693151905/1494006151225016421" target="_blank" rel="noopener noreferrer" data-reveal>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=900" alt="Minecraft village beneath a blue sky" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY CHAT</small><strong>MEMES CHAT</strong><em>JOIN THE CHAT <b>›</b></em></span><span class="voxel" aria-hidden="true"></span>
+        </a>
+        <a class="realm-card" href="https://discord.com/channels/1380602172693151905/1490722893888360558" target="_blank" rel="noopener noreferrer" data-reveal>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bluemap-screenshot_%281%29.png?width=900" alt="Aerial view of a detailed Minecraft world" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY CHAT</small><strong>GENERAL FUN</strong><em>JOIN THE CHAT <b>›</b></em></span><span class="voxel voxel-green" aria-hidden="true"></span>
+        </a>
+        <a class="realm-card" href="https://discord.com/channels/1380602172693151905/1490735122759024812" target="_blank" rel="noopener noreferrer" data-reveal>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=900" alt="Minecraft mountains and forest" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY RANKINGS</small><strong>LEADERBOARD</strong><em>VIEW THE RANKS <b>›</b></em></span><span class="voxel voxel-gold" aria-hidden="true"></span>
+        </a>
+        <a class="realm-card" id="giveaways" href="https://discord.com/channels/1380602172693151905/1529493010767941652" target="_blank" rel="noopener noreferrer" data-reveal>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Screenshot_from_the_Minecraft_Nether.png?width=900" alt="Minecraft Nether landscape" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY GIVEAWAYS</small><strong>GIVEAWAYS</strong><em>SEE DETAILS <b>›</b></em></span><span class="voxel voxel-purple" aria-hidden="true"></span>
+        </a>
+        <a class="realm-card" href="https://discord.com/channels/1380602172693151905/1557034862844579920" target="_blank" rel="noopener noreferrer" data-reveal>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=900" alt="Minecraft village in a plains biome" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>BRING YOUR FRIENDS</small><strong>INVITE REWARDS</strong><em>LEARN MORE <b>›</b></em></span><span class="voxel voxel-green" aria-hidden="true"></span>
+        </a>
+        <div class="realm-card server-card" data-reveal aria-label="Smart Realm Minecraft server coming soon">
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=900" alt="Minecraft mountain terrain" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>SMART REALM SERVER</small><strong>COMING SOON</strong><em>LAUNCH NEWS ON DISCORD</em></span>
+        </div>
+      </div>
     </section>
-    <section class="section community-links" id="features"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">ON DISCORD</p><h2>Find us<br><span>here.</span></h2></div><p class="section-aside">The server is still in the works. In the meantime, join the chats and explore the community.</p></div><div class="feature-grid">
-      <a class="feature-card" href="https://discord.com/channels/1380602172693151905/1494006151225016421" target="_blank" rel="noopener noreferrer"><h3>Memes chat</h3><span>Join the conversation ↗</span></a>
-      <a class="feature-card" href="https://discord.com/channels/1380602172693151905/1490722893888360558" target="_blank" rel="noopener noreferrer"><h3>General fun chat</h3><span>Join the conversation ↗</span></a>
-      <a class="feature-card" href="https://discord.com/channels/1380602172693151905/1490735122759024812" target="_blank" rel="noopener noreferrer"><h3>Leaderboard</h3><span>View the leaderboard ↗</span></a>
-      <a class="feature-card" href="https://discord.com/channels/1380602172693151905/1529493010767941652" target="_blank" rel="noopener noreferrer"><h3>Giveaways</h3><span>See current details ↗</span></a>
-      <a class="feature-card" href="https://discord.com/channels/1380602172693151905/1557034862844579920" target="_blank" rel="noopener noreferrer"><h3>Invite rewards</h3><span>See how it works ↗</span></a>
-    </div></div></section>
+    <section class="discord-footer-cta"><p>READY TO JOIN THE COMMUNITY?</p><a class="green-button" href="https://discord.gg/xJpP79EB4y" target="_blank" rel="noopener noreferrer">JOIN SMART REALM DISCORD <span>›</span></a></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-top"><a class="brand" href="#top"><img src="./icon.png" alt="" width="38" height="38"><span>SMART<span class="brand-light"> REALM</span></span></a><p><small>Smart Realm is an independent community and is not affiliated with Mojang or Microsoft.</small></p><a href="https://discord.gg/xJpP79EB4y" target="_blank" rel="noopener noreferrer" class="footer-discord">Discord ↗</a></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Smart Realm</span><a href="#top">Back to top ↑</a></div><div class="wrap credits">Image sources: Wikimedia Commons. See <a href="./IMAGE-CREDITS.md">image credits and license notes</a>.</div></footer>
+  <footer class="site-footer"><a class="footer-brand" href="#top"><img src="./icon.png" alt="" width="30" height="30"><span>SMART REALM</span></a><p>Smart Realm is an independent community and is not affiliated with Mojang or Microsoft.</p><small>Images: Wikimedia Commons · <a href="./IMAGE-CREDITS.md">Image sources and license notes</a></small></footer>
   <script src="./script.js" defer></script>
 </body>
 </html>
