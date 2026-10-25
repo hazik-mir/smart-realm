@@ -2,18 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Smart Realm — Minecraft Community</title>
   <meta name="description" content="Join Smart Realm for Minecraft community chats, giveaways, invite rewards and news about our upcoming Minecraft server.">
   <meta name="theme-color" content="#171717">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/">
+
+  <!-- Embed / link preview (Discord, WhatsApp, Telegram, etc.) -->
+  <!-- NOTE: og:image MUST be an absolute URL. Replace YOUR-USERNAME / YOUR-REPOSITORY with your real GitHub Pages path. -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Smart Realm">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Smart Realm — Minecraft Community">
   <meta property="og:description" content="A Minecraft community for chat, competitions, giveaways and the upcoming Smart Realm server.">
   <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/">
-  <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=1200">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/icon.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Smart Realm logo">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Smart Realm — Minecraft Community">
+  <meta name="twitter:description" content="A Minecraft community for chat, competitions, giveaways and the upcoming Smart Realm server.">
+  <meta name="twitter:image" content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/icon.png">
+  <meta name="twitter:image:alt" content="Smart Realm logo">
+
   <link rel="icon" href="./icon.png" type="image/png">
-  <link rel="stylesheet" href="./styles.css?v=2">
+  <link rel="apple-touch-icon" href="./icon.png">
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://commons.wikimedia.org" crossorigin>
+  <link rel="preload" as="image" href="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=1800" fetchpriority="high">
+  <link rel="stylesheet" href="./styles.css?v=4">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Smart Realm",
+    "url": "https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/",
+    "logo": "https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/icon.png",
+    "sameAs": ["https://discord.gg/xJpP79EB4y"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -30,7 +62,7 @@
   <main id="main">
     <section class="hero-section" id="top" aria-label="Featured Smart Realm scene">
       <div class="hero-frame">
-        <img class="hero-image" id="hero-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=1800" alt="Minecraft village in a plains biome" fetchpriority="high">
+        <img class="hero-image" id="hero-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=1800" alt="Minecraft village in a plains biome" width="1800" height="1013" decoding="async" fetchpriority="high">
         <div class="hero-overlay"></div>
         <img class="hero-logo" src="./icon.png" alt="Smart Realm" width="132" height="132">
         <article class="hero-panel" id="hero-panel">
@@ -42,9 +74,9 @@
         <p class="hero-creditline">SMART REALM COMMUNITY · MINECRAFT SERVER COMING SOON</p>
       </div>
       <div class="hero-thumbnails" role="group" aria-label="Choose a featured Minecraft scene">
-        <button class="thumb active" type="button" aria-pressed="true" aria-label="Show village scene" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=1800" data-alt="Minecraft village in a plains biome" data-title="A new world<br>is taking shape." data-copy="Find your people, join the conversation and get ready for the upcoming Minecraft server."><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=360" alt=""><img class="thumb-logo" src="./icon.png" alt=""></button>
-        <button class="thumb" type="button" aria-pressed="false" aria-label="Show mountain scene" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=1800" data-alt="Snowy Minecraft mountains and forest" data-title="Find your place<br>in the realm." data-copy="Meet players, share your builds and explore what the Smart Realm community is up to."><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=360" alt=""><img class="thumb-logo" src="./icon.png" alt=""></button>
-        <button class="thumb" type="button" aria-pressed="false" aria-label="Show Nether scene" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Screenshot_from_the_Minecraft_Nether.png?width=1800" data-alt="Minecraft Nether landscape" data-title="The adventure<br>starts together." data-copy="Join the Discord now and be there when the Smart Realm server opens."><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Screenshot_from_the_Minecraft_Nether.png?width=360" alt=""><img class="thumb-logo" src="./icon.png" alt=""></button>
+        <button class="thumb active" type="button" aria-pressed="true" aria-label="Show village scene" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=1800" data-alt="Minecraft village in a plains biome" data-title="A new world<br>is taking shape." data-copy="Find your people, join the conversation and get ready for the upcoming Minecraft server."><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=360" alt="" loading="lazy" decoding="async"><img class="thumb-logo" src="./icon.png" alt=""></button>
+        <button class="thumb" type="button" aria-pressed="false" aria-label="Show mountain scene" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=1800" data-alt="Snowy Minecraft mountains and forest" data-title="Find your place<br>in the realm." data-copy="Meet players, share your builds and explore what the Smart Realm community is up to."><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=360" alt="" loading="lazy" decoding="async"><img class="thumb-logo" src="./icon.png" alt=""></button>
+        <button class="thumb" type="button" aria-pressed="false" aria-label="Show Nether scene" data-image="https://commons.wikimedia.org/wiki/Special:FilePath/Screenshot_from_the_Minecraft_Nether.png?width=1800" data-alt="Minecraft Nether landscape" data-title="The adventure<br>starts together." data-copy="Join the Discord now and be there when the Smart Realm server opens."><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Screenshot_from_the_Minecraft_Nether.png?width=360" alt="" loading="lazy" decoding="async"><img class="thumb-logo" src="./icon.png" alt=""></button>
       </div>
     </section>
     <section class="server-bar" id="server"><div class="server-status"><span class="status-dot"></span><span class="server-label">SERVER STATUS</span><strong>COMING SOON</strong></div><p>The Smart Realm server is in development. We’ll share the address and launch news when they’re confirmed.</p><a href="https://discord.gg/xJpP79EB4y" target="_blank" rel="noopener noreferrer">GET UPDATES ON DISCORD <span>›</span></a></section>
@@ -52,30 +84,29 @@
       <div class="section-title"><p class="section-kicker">THE COMMUNITY</p><h2>DISCOVER SMART REALM</h2><p>Find your channel. Join the fun.</p></div>
       <div class="realm-grid">
         <a class="realm-card" href="https://discord.com/channels/1380602172693151905/1494006151225016421" target="_blank" rel="noopener noreferrer" data-reveal>
-          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=900" alt="Minecraft village beneath a blue sky" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY CHAT</small><strong>MEMES CHAT</strong><em>JOIN THE CHAT <b>›</b></em></span><span class="voxel" aria-hidden="true"></span>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=900" alt="Minecraft village beneath a blue sky" loading="lazy" decoding="async"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY CHAT</small><strong>MEMES CHAT</strong><em>JOIN THE CHAT <b>›</b></em></span><span class="voxel" aria-hidden="true"></span>
         </a>
         <a class="realm-card" href="https://discord.com/channels/1380602172693151905/1490722893888360558" target="_blank" rel="noopener noreferrer" data-reveal>
-          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bluemap-screenshot_%281%29.png?width=900" alt="Aerial view of a detailed Minecraft world" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY CHAT</small><strong>GENERAL FUN</strong><em>JOIN THE CHAT <b>›</b></em></span><span class="voxel voxel-green" aria-hidden="true"></span>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bluemap-screenshot_%281%29.png?width=900" alt="Aerial view of a detailed Minecraft world" loading="lazy" decoding="async"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY CHAT</small><strong>GENERAL FUN</strong><em>JOIN THE CHAT <b>›</b></em></span><span class="voxel voxel-green" aria-hidden="true"></span>
         </a>
         <a class="realm-card" href="https://discord.com/channels/1380602172693151905/1490735122759024812" target="_blank" rel="noopener noreferrer" data-reveal>
-          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=900" alt="Minecraft mountains and forest" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY RANKINGS</small><strong>LEADERBOARD</strong><em>VIEW THE RANKS <b>›</b></em></span><span class="voxel voxel-gold" aria-hidden="true"></span>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=900" alt="Minecraft mountains and forest" loading="lazy" decoding="async"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY RANKINGS</small><strong>LEADERBOARD</strong><em>VIEW THE RANKS <b>›</b></em></span><span class="voxel voxel-gold" aria-hidden="true"></span>
         </a>
         <a class="realm-card" id="giveaways" href="https://discord.com/channels/1380602172693151905/1529493010767941652" target="_blank" rel="noopener noreferrer" data-reveal>
-          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Screenshot_from_the_Minecraft_Nether.png?width=900" alt="Minecraft Nether landscape" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY GIVEAWAYS</small><strong>GIVEAWAYS</strong><em>SEE DETAILS <b>›</b></em></span><span class="voxel voxel-purple" aria-hidden="true"></span>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Screenshot_from_the_Minecraft_Nether.png?width=900" alt="Minecraft Nether landscape" loading="lazy" decoding="async"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>COMMUNITY GIVEAWAYS</small><strong>GIVEAWAYS</strong><em>SEE DETAILS <b>›</b></em></span><span class="voxel voxel-purple" aria-hidden="true"></span>
         </a>
         <a class="realm-card" href="https://discord.com/channels/1380602172693151905/1557034862844579920" target="_blank" rel="noopener noreferrer" data-reveal>
-          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=900" alt="Minecraft village in a plains biome" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>BRING YOUR FRIENDS</small><strong>INVITE REWARDS</strong><em>LEARN MORE <b>›</b></em></span><span class="voxel voxel-green" aria-hidden="true"></span>
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_village_panorama.png?width=900" alt="Minecraft village in a plains biome" loading="lazy" decoding="async"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>BRING YOUR FRIENDS</small><strong>INVITE REWARDS</strong><em>LEARN MORE <b>›</b></em></span><span class="voxel voxel-green" aria-hidden="true"></span>
         </a>
-        <div class="realm-card server-card" data-reveal aria-label="Smart Realm Minecraft server coming soon">
-          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=900" alt="Minecraft mountain terrain" loading="lazy"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>SMART REALM SERVER</small><strong>COMING SOON</strong><em>LAUNCH NEWS ON DISCORD</em></span>
+        <div class="realm-card server-card" data-reveal role="group" aria-label="Smart Realm Minecraft server coming soon">
+          <img class="card-image" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft_-_1.18_mountains.jpg?width=900" alt="Minecraft mountain terrain" loading="lazy" decoding="async"><span class="card-shade"></span><img class="card-logo" src="./icon.png" alt="" width="94" height="94" loading="lazy"><span class="card-copy"><small>SMART REALM SERVER</small><strong>COMING SOON</strong><em>LAUNCH NEWS ON DISCORD</em></span>
         </div>
       </div>
     </section>
     <section class="discord-footer-cta"><p>READY TO JOIN THE COMMUNITY?</p><a class="green-button" href="https://discord.gg/xJpP79EB4y" target="_blank" rel="noopener noreferrer">JOIN SMART REALM DISCORD <span>›</span></a></section>
   </main>
-  <footer class="site-footer"><a class="footer-brand" href="#top"><img src="./icon.png" alt="" width="30" height="30"><span>SMART REALM</span></a><p>Smart Realm is an independent community and is not affiliated with Mojang or Microsoft. Wesite developer Hazik | developer.hazik@gmail.com</p><small>Images: Wikimedia Commons · <a href="./IMAGE-CREDITS.md">Image sources and license notes</a></small></footer>
-  <script src="./script.js" defer></script>
+  <footer class="site-footer"><a class="footer-brand" href="#top"><img src="./icon.png" alt="" width="30" height="30"><span>SMART REALM</span></a><p>Smart Realm is an independent community and is not affiliated with Mojang or Microsoft. Website developer Hazik | <a href="mailto:developer.hazik@gmail.com">developer.hazik@gmail.com</a></p><small>Images: Wikimedia Commons · <a href="./IMAGE-CREDITS.md">Image sources and license notes</a></small></footer>
+  <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+  <script src="./script.js?v=2" defer></script>
 </body>
 </html>
-
-

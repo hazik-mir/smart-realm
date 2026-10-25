@@ -65,3 +65,25 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   }, { passive: true });
   window.addEventListener('resize', updateScenes);
 }
+
+// Golden cursor glow (desktop / mouse only)
+if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const glow = document.createElement('div');
+  glow.className = 'cursor-glow';
+  glow.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(glow);
+  let x = 0, y = 0, pending = false;
+  window.addEventListener('mousemove', e => {
+    x = e.clientX; y = e.clientY;
+    glow.classList.add('on');
+    if (!pending) {
+      pending = true;
+      requestAnimationFrame(() => {
+        glow.style.setProperty('--mx', x + 'px');
+        glow.style.setProperty('--my', y + 'px');
+        pending = false;
+      });
+    }
+  }, { passive: true });
+  document.addEventListener('mouseleave', () => glow.classList.remove('on'));
+}
